@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Agora!</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <script src="js/scripts.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o name da cidade" id="input-cidade">
+                <button id="busca"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div id="dados-weather" class="dados-weather hide">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="Bandeira do pais" id="pais">
+            </h2>
+
+            <p id="temperatura"><span></span>&deg;C</p>
+            <div class="descricao-container">
+                <p id="descricao"></p>
+                <img src="" alt="Condicoes do tempo" id="weather-icon">    
+            </div>
+
+            <div class="detalhes-container">
+                <p id="umidade">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+
+        <div id="naoEncontrada" class="naoEncontrada hide">
+            <p>Essa cidade não foi encontrada</p>
+            <p>Tente novamente</p>
+        </div>
+    </div>
+</body>
+</html>
